@@ -1,0 +1,12 @@
+node_modules
+dist
+generated
+**/*.js
+**/*.generated.*
+clients/flutter/pubspec.yaml
+clients/react/package.json
+clients/vue/package.json
+*.graphql
+*.gql
+.DS_Store
+*.log

@@ -1,0 +1,48 @@
+{
+  "name": "graphql-client",
+  "version": "<version>",
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@tanstack/vue-query": "^5.28.4",
+    "firebase": "^9.23.0",
+    "vue": "3.4.21"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "prepare": "yarn run build",
+    "test": "echo \"Tests disabled temporarily\""
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "firebase": "^9.23.0",
+    "qs": "^6.10.3",
+    "retry-axios": "^2.6.0",
+    "ulid": "^2.3.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@tanstack/vue-query": "^5.28.4",
+    "@types/uuid": "^9.0.0",
+    "babel-loader": "^8.2.3",
+    "tslib": "^2.3.1",
+    "tsup": "^6.5.0",
+    "typescript": "4.9.5",
+    "vue": "3.4.21"
+  }
+}

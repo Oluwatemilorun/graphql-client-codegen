@@ -1,0 +1,7 @@
+build.js
+spec
+dist
+clients
+src/db/migrations**
+**/*.js
+firebase/lib
